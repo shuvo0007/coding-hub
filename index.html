@@ -1,295 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programming HUB</title>
-    <link rel="icon" href="img/logo.png" />
 
-    <!-- ----------------------------------------- tailwind ------------------------------------------- -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programming HUB</title>
+  <link rel="icon" href="img/logo.png" />
 
-    <!-- ----------------- For nav bar -------------------- -->
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+  <!-- ----------------------------------------- tailwind ------------------------------------------- -->
 
-    <!-- ---------------- For carousel ------------------- -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <!-- ----------------- For nav bar -------------------- -->
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
+  <!-- ---------------- For carousel ------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {},
-          },
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {},
         },
-      };
-    </script>
-  </head>
-  <body>
-    <!-- ------------------- Navigation Bar ------------------- -->
+      },
+    };
+  </script>
+</head>
 
-    <div class="md:m-32">
-      <nav class="bg-white px-2 sm:px-4 py-10 fixed w-full z-20 top-0 left-0">
-        <div
-          class="container flex flex-wrap justify-between items-center mx-auto"
-        >
-          <a href="#" class="flex items-center">
-            <img
-              src="/img/logo.png"
-              class="mr-3 h-6 sm:h-9"
-              alt="Programming HUB logo"
-            />
-            <span
-              class="self-center text-3xl font-semibold text-gray-600 whitespace-nowrap"
-              >Programming HUB</span
-            >
-          </a>
-          <div class="flex md:order-2">
-            <button
-              type="button"
-              class="text-blue-500 rounded-md border-2 border-blue-500 bor hover:bg-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-lg px-5 py-2.5 text-center mr-3 md:mr-0"
-            >
-              Register
-            </button>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <img src="img/Frame.svg" alt="Menu icon">
-            </button>
-          </div>
-          <div
-            class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
-            id="navbar-sticky"
-          >
-            <ul
-              class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-400 rounded md:hover:bg-transparent md:hover:text-black md:p-0 text-2xl font-normal"
-                  aria-current="page"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-400 rounded md:hover:bg-transparent md:hover:text-black md:p-0 text-2xl font-normal"
-                  >Courses</a
-                >
-              </li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-400 rounded md:hover:bg-transparent md:hover:text-black md:p-0 text-2xl font-normal"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block py-2 pr-4 pl-3 text-gray-400 rounded md:hover:bg-transparent md:hover:text-black md:p-0 text-2xl font-normal"
-                  >Log IN</a
-                >
-              </li>
-            </ul>
+<body>
+  <!-- ------------------- Navigation Bar ------------------- -->
+
+  <div class="md:m-32">
+    <nav class="bg-white px-2 sm:px-4 py-10 fixed w-full z-20 top-0 left-0">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="#" class="flex items-center">
+          <img src="/img/logo.png" class="mr-3 h-6 sm:h-9" alt="Programming HUB logo" />
+          <span class="self-center text-3xl font-semibold text-gray-600 whitespace-nowrap">Programming HUB</span>
+        </a>
+        <div class="flex md:order-2">
+          <button type="button"
+            class="text-blue-500 rounded-md border-2 border-blue-500 bor hover:bg-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-lg px-5 py-2.5 text-center mr-3 md:mr-0">
+            Register
+          </button>
+          <button data-collapse-toggle="navbar-sticky" type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <img src="img/Frame.svg" alt="Menu icon">
+          </button>
+        </div>
+        <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul
+            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+            <li>
+              <a href="#first-banner"
+                class="block py-2 pr-4 pl-3 text-gray-400 rounded md:hover:bg-transparent md:hover:text-black md:p-0 text-2xl font-normal"
+                aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#courses"
+                class="block py-2 pr-4 pl-3 text-gray-400 rounded md:hover:bg-transparent md:hover:text-black md:p-0 text-2xl font-normal">Courses</a>
+            </li>
+            <a href="#footer"
+              class="block py-2 pr-4 pl-3 text-gray-400 rounded md:hover:bg-transparent md:hover:text-black md:p-0 text-2xl font-normal">About</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block py-2 pr-4 pl-3 text-gray-400 rounded md:hover:bg-transparent md:hover:text-black md:p-0 text-2xl font-normal">Log
+                IN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ------------------- Content ------------------- -->
+
+  <!-- ------------------ 1st banner carousel------------------- -->
+  <section id="first-banner" class="md:px-48 md:py-5">
+    <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+      <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner relative w-full overflow-hidden rounded-lg">
+        <div class="carousel-item active relative float-left w-full ">
+          <img src="img/cover/cover-1.png" class="block w-full" alt="..." />
+          <div class="carousel-caption hidden md:block absolute text-center md:pb-72 md:w-6/12 md:mx-36">
+            <h5 class="text-7xl pb-16">Get Started Digital
+              Learning</h5>
+            <p class="text-2xl">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout.</p>
           </div>
         </div>
-      </nav>
+        <div class="carousel-item relative float-left w-full">
+          <img src="img/cover/cover-2.png" class="block w-full" alt="..." />
+          <div class="carousel-caption hidden md:block absolute text-center md:pb-72 md:w-6/12 md:mx-36 ">
+            <h5 class="text-7xl pb-16">Get Started Digital
+              Learning</h5>
+            <p class="text-2xl">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout.</p>
+          </div>
+        </div>
+        <div class="carousel-item relative float-left w-full">
+          <img src="img/cover/cover-3.jpg" class="block w-full" alt="..." />
+          <div class="carousel-caption hidden md:block absolute text-center md:pb-72 md:w-6/12 md:mx-36 ">
+            <h5 class="text-7xl pb-16">Get Started Digital
+              Learning</h5>
+            <p class="text-2xl">It is a long established fact that a reader will be distracted by the readable
+              content of a page when looking at its layout.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+        type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+        type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- -------------------------discover course section-------------------------- -->
+
+  <section class="md:px-48 md:py-5">
+    <div class="flex-row">
+      <div class="text-center w-6/12 mx-96">
+        <h5 id="courses" class="text-7xl">Discover Our Popular
+          Courses</h5>
+        <p class="text-xl">It is a long established fact that a reader will be distracted by the readable
+          content of a page when looking at its layout.</p>
+      </div>
+      <div class="my-10 grid md:grid-cols-2 gap-5">
+        <div class="flex border-2 rounded-lg">
+          <img src="img/course/course-1.png" alt="">
+          <div class="p-5 ">
+            <h5 class="text-3xl font-medium">Fundamental Of UI/UX Design</h5>
+            <p class="text-xl my-3">Some quick example text to build on the card title
+              and make up the bulk of the card.</p>
+            <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
+          </div>
+        </div>
+        <div class="flex border-2 rounded-lg">
+          <img src="img/course/course-2.png" alt="">
+          <div class="p-5 ">
+            <h5 class="text-3xl font-medium">Javascript Basic to advanced</h5>
+            <p class="text-xl my-3">Some quick example text to build on the card title
+              and make up the bulk of the card.</p>
+            <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
+          </div>
+        </div>
+        <div class="flex border-2 rounded-lg">
+          <img src="img/course/course-3.png" alt="">
+          <div class="p-5 ">
+            <h5 class="text-3xl font-medium">Fullstack Web Development</h5>
+            <p class="text-xl my-3">Some quick example text to build on the card title
+              and make up the bulk of the card.</p>
+            <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
+          </div>
+        </div>
+        <div class="flex border-2 rounded-lg">
+          <img src="img/course/course-4.png" alt="">
+          <div class="p-5 ">
+            <h5 class="text-3xl font-medium">Digital Marketing
+            </h5>
+            <p class="text-xl my-3">Some quick example text to build on the card title
+              and make up the bulk of the card.</p>
+            <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
+          </div>
+        </div>
+        <div class="flex border-2 rounded-lg">
+          <img src="img/course/course-5.png" alt="">
+          <div class="p-5 ">
+            <h5 class="text-3xl font-medium">Photography Basic Rules</h5>
+            <p class="text-xl my-3">Some quick example text to build on the card title
+              and make up the bulk of the card.</p>
+            <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
+          </div>
+        </div>
+        <div class="flex border-2 rounded-lg">
+          <img src="img/course/course-6.png" alt="">
+          <div class="p-5 ">
+            <h5 class="text-3xl font-medium">Motion Graphics
+            </h5>
+            <p class="text-xl my-3">Some quick example text to build on the card title
+              and make up the bulk of the card.</p>
+            <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mb-10">
+        <button
+          class="text-2xl text-white border-2 border-blue-500 bg-blue-500 rounded-lg hover:bg-white hover:text-blue-500 px-8 py-4">See
+          More Courses</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----------------ready to join section---------------------- -->
+
+  <section class="md:px-48 md:my-5">
+    <div class="bg-blue-500 rounded-lg md:p-24 flex justify-between">
+      <div>
+        <h5 class="text-white text-5xl py-5 font-bold">Ready to join?</h5>
+        <p class="text-white text-xl w-2/3 py-3">It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.</p>
+      </div>
+      <div class="md:py-10">
+        <!-- <button
+          class="text-3xl font-bold text-blue-500 border-2 border-blue-500 bg-white rounded-lg hover:bg-blue-800 hover:text-white px-8 py-4">Register
+          Now</button> -->
+
+
+        <button
+          class="block text-3xl font-bold text-blue-500 border-2 border-blue-500 bg-white rounded-lg hover:bg-blue-800 hover:text-white px-8 py-4 focus:ring-4 focus:outline-none focus:ring-blue-300 text-center"
+          type="button" data-modal-toggle="popup-modal">
+          Register now
+        </button>
+
+        <div id="popup-modal" tabindex="-1"
+          class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 md:inset-0 h-modal md:h-full justify-center items-center hidden"
+          aria-modal="true" role="dialog">
+          <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <button type="button"
+                class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                data-modal-toggle="popup-modal">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+              <div class="p-6 text-center">
+                <svg aria-hidden="true" class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">We are currently not registering
+                  any member in our community</h3>
+                <button data-modal-toggle="popup-modal" type="button"
+                  class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                  Thank You
+                </button>
+                <button data-modal-toggle="popup-modal" type="button"
+                  class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- -------------------------Frequently ask question-------------------------- -->
+
+  <section class="md:px-48 md:py-5">
+    <div class="flex-row text-center mx-64">
+      <div>
+        <h5 class="text-5xl">Frequently Asked Questions</h5>
+        <p class="my-7 mx-34 text-2xl">It is a long established fact that a reader will be distracted by the readable
+          content of a page when looking at its layout.</p>
+      </div>
+
+      <!-- ----------------accordian------------- -->
+      <div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item rounded-none bg-white border-0 border-gray-200">
+            <h2 class="accordion-header mb-0 " id="flush-headingOne">
+              <button class="accordion-button
+                text-2xl
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+             text-left
+            bg-white
+            font-bold
+              border-2
+              my-5
+              rounded
+              transition
+              focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                aria-expanded="false" aria-controls="flush-collapseOne">
+                <span>What are the defferences between flexbox and grid?</span>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse border-0 collapse show"
+              aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body p-7 text-left text-xl text-gray-500">Grid and flexbox. The basic difference
+                between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension
+                - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same
+                time.</div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item rounded-none bg-white border-0 border-gray-200">
+            <h2 class="accordion-header mb-0" id="flush-headingTwo">
+              <button class="accordion-button
+                text-2xl
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+             text-left
+            bg-white
+            font-bold
+              border-2
+              my-5
+              rounded
+              transition
+              focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                aria-expanded="false" aria-controls="flush-collapseTwo">
+                What are the defferences between boostrap and tailwind?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body p-7 text-left text-xl text-gray-500">Bootstrap comes with a set of pre-styled
+                responsive, mobile-first components that possess a definite UI kit. Tailwind CSS uses a set of utility
+                classes to create a neat UI with more flexibility and uniqueness. Sites created using Bootstrap follow
+                the generic pattern that makes them look identical.</div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item border-l-0 border-r-0 border-b-0 rounded-none bg-white border border-gray-200">
+            <h2 class="accordion-header mb-0" id="flush-headingThree">
+              <button class="accordion-button
+                text-2xl
+              relative
+              flex
+              items-center
+              w-full
+              py-4
+              px-5
+             text-left
+            bg-white
+            font-bold
+              border-2
+              my-5
+              rounded
+              transition
+              focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                aria-expanded="false" aria-controls="flush-collapseThree">
+                What is css box model?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body p-7 text-left text-xl text-gray-500">In CSS, the term "box model" is used when
+                talking about design and layout. The CSS box model is essentially a box that wraps around every HTML
+                element.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item rounded-none bg-white border-0 border-gray-200">
+            <h2 class="accordion-header mb-0" id="flush-headingFour">
+              <button class="accordion-button
+                text-2xl
+               relative
+               flex
+               items-center
+               w-full
+               py-4
+               px-5
+               text-left
+             bg-white
+               font-bold
+               border-2
+               my-5
+               rounded
+               transition
+               focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                aria-expanded="false" aria-controls="flush-collapseFour">
+                What is semantic tag?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse border-0 collapse"
+              aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body p-7 text-left text-xl text-gray-500">The HTML semantics refers to the tags that
+                provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by
+                better defining the different sections and layout of web pages.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ------------------trusted section---------------- -->
+
+  <section class="hidden md:block md:px-48 md:py-5">
+
+    <div class="text-center">
+
+      <h5 class="text-5xl font-bold my-20">Trusted by over 800+ companies</h5>
+
+      <div class="flex justify-between my-10">
+        <img class="h-full" src="img/company/company-1.png" alt="">
+        <img class="h-full" src="img/company/company-2.png" alt="">
+        <img class="h-full" src="img/company/company-3.png" alt="">
+        <img class="h-full" src="img/company/company-4.png" alt="">
+        <img class="h-full" src="img/company/company-5.png" alt="">
+        <img class="h-full" src="img/company/company-6.png" alt="">
+      </div>
     </div>
 
-    <!-- ------------------- Content ------------------- -->
-
-    <!-- ------------------ 1st banner carousel------------------- -->
-    <section class="md:px-48 md:py-5">
-      <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
-        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner relative w-full overflow-hidden rounded-lg">
-          <div class="carousel-item active relative float-left w-full ">
-            <img
-              src="img/cover/cover-1.png"
-              class="block w-full"
-              alt="..."
-            />
-              <div class="carousel-caption hidden md:block absolute text-center md:pb-72 md:w-6/12 md:mx-36">
-                <h5 class="text-7xl pb-16">Get Started Digital
-                  Learning</h5>
-                <p class="text-2xl">It is a long established fact that a reader will be distracted by the readable
-                  content of a page when looking at its layout.</p>
-              </div>
-          </div>
-          <div class="carousel-item relative float-left w-full">
-            <img
-              src="img/cover/cover-2.png"
-              class="block w-full"
-              alt="..."
-            />
-            <div class="carousel-caption hidden md:block absolute text-center md:pb-72 md:w-6/12 md:mx-36 ">
-              <h5 class="text-7xl pb-16">Get Started Digital
-                Learning</h5>
-              <p class="text-2xl">It is a long established fact that a reader will be distracted by the readable
-                content of a page when looking at its layout.</p>
-            </div>
-          </div>
-          <div class="carousel-item relative float-left w-full">
-            <img
-              src="img/cover/cover-3.jpg"
-              class="block w-full"
-              alt="..."
-            />
-            <div class="carousel-caption hidden md:block absolute text-center md:pb-72 md:w-6/12 md:mx-36 ">
-              <h5 class="text-7xl pb-16">Get Started Digital
-                Learning</h5>
-              <p class="text-2xl">It is a long established fact that a reader will be distracted by the readable
-                content of a page when looking at its layout.</p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-
-    <!-- -------------------------discover course section-------------------------- -->
-
-    <section class="md:px-48 md:py-5">
-      <div class="flex-row">
-        <div class="text-center w-6/12 mx-96">
-          <h5 class="text-7xl">Discover Our Popular
-            Courses</h5>
-            <p class="text-xl">It is a long established fact that a reader will be distracted by the readable
-              content of a page when looking at its layout.</p>
-        </div>
-        <div class="my-10 grid md:grid-cols-2 gap-5">
-          <div class="flex border-2 rounded-lg">
-            <img src="img/course/course-1.png" alt="">
-            <div class="p-5 ">
-              <h5 class="text-3xl font-medium">Fundamental Of UI/UX Design</h5>
-              <p class="text-xl my-3">Some quick example text to build on the card title
-              and make up the bulk of the card.</p>
-              <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
-            </div>
-          </div>
-          <div class="flex border-2 rounded-lg">
-            <img src="img/course/course-2.png" alt="">
-            <div class="p-5 ">
-              <h5 class="text-3xl font-medium">Javascript Basic to advanced</h5>
-              <p class="text-xl my-3">Some quick example text to build on the card title
-                and make up the bulk of the card.</p>
-              <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
-            </div>
-          </div>
-          <div class="flex border-2 rounded-lg">
-            <img src="img/course/course-3.png" alt="">
-            <div class="p-5 ">
-              <h5 class="text-3xl font-medium">Fullstack Web Development</h5>
-              <p class="text-xl my-3">Some quick example text to build on the card title
-              and make up the bulk of the card.</p>
-              <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
-            </div>
-          </div>
-          <div class="flex border-2 rounded-lg">
-            <img src="img/course/course-4.png" alt="">
-            <div class="p-5 ">
-              <h5 class="text-3xl font-medium">Digital Marketing
-              </h5>
-              <p class="text-xl my-3">Some quick example text to build on the card title
-              and make up the bulk of the card.</p>
-              <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
-            </div>
-          </div>
-          <div class="flex border-2 rounded-lg">
-            <img src="img/course/course-5.png" alt="">
-            <div class="p-5 ">
-              <h5 class="text-3xl font-medium">Photography Basic Rules</h5>
-              <p class="text-xl my-3">Some quick example text to build on the card title
-              and make up the bulk of the card.</p>
-              <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
-            </div>
-          </div>
-          <div class="flex border-2 rounded-lg">
-            <img src="img/course/course-6.png" alt="">
-            <div class="p-5 ">
-              <h5 class="text-3xl font-medium">Motion Graphics
-              </h5>
-              <p class="text-xl my-3">Some quick example text to build on the card title
-              and make up the bulk of the card.</p>
-              <p class="text-xl text-blue-400 font-medium">Price : 20$</p>
-            </div>
-          </div>
-        </div>
-        <div class="text-center mb-10">
-          <button class="text-2xl text-white border-2 border-blue-500 bg-blue-500 rounded-lg hover:bg-white hover:text-blue-500 px-8 py-4">See More Courses</button>
-        </div>
-      </div>
-    </section>
-    
+  </section>
 
 
-    <!-- -----------------ready to join section---------------------- -->
-
-    <section class="md:px-48 md:my-5">
-      <div class="bg-blue-500 rounded-lg md:p-24 flex justify-between">
-        <div>
-          <h5 class="text-white text-5xl py-5 font-bold">Ready to join?</h5>
-          <p class="text-white text-xl w-2/3 py-3">It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout.</p>
-        </div>
-        <div class="md:py-10">
-          <button class="text-3xl font-bold text-blue-500 border-2 border-blue-500 bg-white rounded-lg hover:bg-blue-800 hover:text-white px-8 py-4">Register Now</button>
-        </div>
-        </div>
-      </div>
-    </section>
+  <!-- ------------------- Footer ------------------- -->
 
 
-    <!-- ------------------- Footer ------------------- -->
+  <footer id="footer" class="flex-row text-center bg-black text-white py-36">
+    <h5 class="text-5xl m-5">Programming HUB</h5>
+    <p class="text-xl py-2 ">Office 41, Zawaya Buildin, Ghala Muscat, <br> Sultanate of Oman</p>
+    <p class="text-xl my-2">Privacy Ploicy | Terms of use</p>
+
+    <div class="flex justify-center">
+      <a class="mx-5 my-5" href="https://www.facebook.com/" target="_blank"><img class="w-12"
+          src="img/footer-icon/facebook.png" alt=""></a>
+      <a class="mx-5 my-5" href="https://twitter.com/" target="_blank"><img class="w-12"
+          src="img/footer-icon/linkedin.png" alt=""></a>
+      <a class="mx-5 my-5" href="https://www.linkedin.com/" target="_blank"><img class="w-12"
+          src="img/footer-icon/twitter.png" alt=""></a>
+    </div>
+  </footer>
 
 
 
@@ -300,14 +462,12 @@
 
 
 
+  <!-- ---------------------------essetial script links------------------------------------ -->
+  <!-- ----------------- For nav bar -------------------- -->
+  <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 
+  <!-- ---------------- For carousel ------------------- -->
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
 
-
-    <!-- ---------------------------essetial script links------------------------------------ -->
-    <!-- ----------------- For nav bar -------------------- -->
-    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
-
-    <!-- ---------------- For carousel ------------------- -->
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
-  </body>
 </html>
